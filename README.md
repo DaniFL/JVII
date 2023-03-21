@@ -1,4 +1,4 @@
-## GAME OF LIFE
+## Práctica II - GAME OF LIFE
 
 ![Copyright.png](img.png)
 
@@ -15,24 +15,39 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.*
 
-# Creador:
+# Descripción:
 
-* Daniel Fernández López
+Desarrollo de una aplicación que implemente el Juego de la Vida de Conway. 
 
-# Práctica 2:
-
-El objetivo de esta práctica es poder implementar a partir de una matriz cuadrada de 30x30 el Juego de la Vida. Durante el proceso se ha de tener en cuenta las siguientes reglas:
+# Requisitos:
 
 * Si una célula está viva y dos o tres de sus vecinas también lo están, entonces continúa viva en el estado siguiente.
 * Si una célula está muerta y tres de sus vecinas están vivas, entonces pasa a estar viva en el estado siguiente.
 * El resto de células pasan a estar muertas en el estado siguiente.
+* El estado de las células se representa mediante un tablero de 30x30.
+
+# Desarrollo:
+
+* El programa se ha desarrollado en Java, utilizando la herramienta Maven para la gestión de dependencias y la creación del JAR.
+* Para la gestión de la lógica del juego se ha utilizado la librería JUnit.
+* Para la gestión de la versión se ha utilizado la herramienta Git.
+* Para la gestión de la licencia se ha utilizado la herramienta Apache.
+* Para la gestión de la configuración se ha utilizado la herramienta Maven.
+
+
 # Funcionamiento:
 
-En primer lugar, asegúrese de que se encuentra en la carpeta correcta, para ello utilice los comandos "ls" (para ver donde se encuentra) y "cd Juego-vida" (para acceder a la carpeta de la práctica) en el terminal. Una vez dentro proceda a ejecutar los siguientes comandos:
+* El programa se ejecuta mediante la línea de comandos.
+* Para ejecutar el programa se debe introducir el siguiente comando:
 
-* Para compilar y crear el JAR: "mvn compile assembly:single"
+```
+java -jar GameOfLife.jar
+```
 
-* Para ejecutar:"java -jar target/Juego-Vida-1.0-SNAPSHOT-jar-with-dependencies.jar"
+* 
+
+
+
 
 <p align = "center">
 <img width = "800" height = "400" src = "GameOfLife.gif">
