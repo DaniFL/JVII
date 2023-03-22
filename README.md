@@ -82,6 +82,6 @@ Las células vivas se representan con el carácter "0" y las muertas con el car�
 
 <br>
 
-<p align = "center">
+<p style="align-content: center">
 <img width = "800" height = "400" src = "GameOfLife.gif">
 </p>
