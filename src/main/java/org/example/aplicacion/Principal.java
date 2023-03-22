@@ -3,11 +3,20 @@ package org.example.aplicacion;
 
 import java.util.concurrent.TimeUnit;
 import org.example.dominio.Tablero;
-import java.io.IOException;
 import java.lang.InterruptedException;
 
-        public class Principal {
-                public static void main(String[] args) throws InterruptedException {
+/**
+ * Clase Principal.
+ */
+public class Principal {
+
+    /**
+     * Método Main de la clase Principal.
+     *
+     * @param args entrada de argumentos
+     * @throws InterruptedException excepción de interrupción
+     */
+    public static void main(String[] args) throws InterruptedException {
                     Tablero tablero = new Tablero();
                     String archivo = "matriz.txt";
 

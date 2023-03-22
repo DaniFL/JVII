@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>/Users/danii/Desktop/JVII/src</OriginalElement>
+  <nodes>
+    <node x="-57.0" y="343.0">org.example.AppTest</node>
+    <node x="12.0" y="222.0">org.example.aplicacion.Principal</node>
+    <node x="-57.0" y="-14.0">org.example.dominio.Tablero</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.example.aplicacion.Principal" target="org.example.dominio.Tablero" relationship="CREATE">
+      <point x="0.0" y="-38.0" />
+      <point x="0.0" y="93.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.346578366445916" showDependencies="true" x="105.0" y="212.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

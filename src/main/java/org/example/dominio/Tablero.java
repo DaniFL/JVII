@@ -5,15 +5,26 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Random;
 
+/**
+ * Clase Tablero.
+ */
 public class Tablero {
     private static final int DIMENSION = 30;
     private int[][] estadoActual;
     private int[][] estadoSiguiente = new int[DIMENSION][DIMENSION];
 
+    /**
+     * Instancia un nuevo Tablero.
+     */
     public Tablero() {
         estadoActual = new int[DIMENSION][DIMENSION];
     }
 
+    /**
+     * Leer estado actual.
+     *
+     * @param archivo lee archivo-(Matriz.txt)
+     */
     public void leerEstadoActual(String archivo) {
         try (BufferedReader br = new BufferedReader(new FileReader(archivo))) {
             String linea;
@@ -29,6 +40,9 @@ public class Tablero {
         }
     }
 
+    /**
+     * Generar estado actual por montecarlo.
+     */
     public void generarEstadoActualPorMontecarlo() {
         Random rand = new Random();
         for (int fila = 0; fila < DIMENSION; fila++) {
@@ -38,6 +52,9 @@ public class Tablero {
         }
     }
 
+    /**
+     * Transitar al estado siguiente.
+     */
     public void transitarAlEstadoSiguiente() {
         for (int fila = 0; fila < DIMENSION; fila++) {
             for (int columna = 0; columna < DIMENSION; columna++) {
@@ -55,6 +72,9 @@ public class Tablero {
         estadoSiguiente = new int[DIMENSION][DIMENSION];
     }
 
+    /**
+     * Cuenta las vecinas vivas.
+     */
     private int contarVecinasVivas(int fila, int columna) {
         int vecinasVivas = 0;
         for (int i = fila - 1; i <= fila + 1; i++) {
@@ -67,6 +87,9 @@ public class Tablero {
         return vecinasVivas;
     }
 
+    /**
+     * Representación en String del estado actual.
+     */
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
@@ -79,6 +102,9 @@ public class Tablero {
         return sb.toString();
     }
 
+    /**
+     * Imprimir estado actual.
+     */
     public void imprimirEstadoActual() {
         System.out.print("\033[H\033[2J");
         System.out.println("\n");
