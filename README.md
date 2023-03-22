@@ -76,6 +76,13 @@ Las células vivas se representan con el carácter "0" y las muertas con el car�
 </p>
 <br>
 
+<p style="text-align: justify;">
+<strong>
+El archivo index.html contiene la documentación del proyecto, generada con la herramienta Javadoc, se podrá encontrar en la carpeta "target/site/apidocs/index.html" una vez ejecutado el comando mvn package.
+</strong>
+</p>
+
+
 ## Diagrama de clases:
 
 <img style="position:center;" src="diagram.png">
