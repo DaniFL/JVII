@@ -42,7 +42,7 @@ que implemente el Juego de la Vida de Conway.
 * Para la gestión de la configuración se ha utilizado la herramienta Maven.
 
 
-# Funcionamiento:
+## Funcionamiento:
 
 * El programa se ejecuta mediante la línea de comandos.
 * Una vez clonado el repositorio, se debe acceder a la carpeta del proyecto y ejecutar el siguiente comando:
