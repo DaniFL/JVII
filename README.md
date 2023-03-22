@@ -78,6 +78,8 @@ Las células vivas se representan con el carácter "0" y las muertas con el car�
 
 ## Diagrama de clases:
 
+<img style="position: absolute;" src="diagram.png">
+
 ![img.png](diagram.png)
 
 <br>
